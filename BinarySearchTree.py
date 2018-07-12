@@ -16,7 +16,6 @@ class BinarySearchTree:
         if self.root is None:
             self.root = node
         else:
-            n = self.root
             self.insert_again(data, self.root)
 
     def insert_again(self, data, node):
@@ -55,7 +54,7 @@ import random
 b = BinarySearchTree()
 
 for i in range(100):
-    b.insert(random.randint(0,100))
+    b.insert(random.randint(0,1000))
 
 
 b.min_element()
